@@ -44,7 +44,7 @@ const Login = props => {
     if (response.ok) {
       console.log(data)
       Cookies.set('jwt_token', data.jwt_token, {expires: 30})
-      history.replace('/')
+      history.replace('/ebank')
     } else {
       setError(data.error_msg)
     }
@@ -62,7 +62,7 @@ const Login = props => {
         />
 
         <form className="login-card" onSubmit={handleLogin}>
-          <h1 className="login-title">Welcome Back!</h1>
+          <h1 className="login-title">Welcome Back</h1>
 
           <div className="input-group">
             <label className="input-label" htmlFor="userId">
