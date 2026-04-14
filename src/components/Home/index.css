@@ -1,0 +1,38 @@
+.home-container {
+  min-height: 100vh;
+  background-color: #152850;
+  display: flex;
+  flex-direction: column;
+}
+
+/* center content below header */
+.home-content {
+  flex: 1; /* takes remaining space below header */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* vertical center */
+  align-items: center; /* horizontal center */
+  text-align: center;
+}
+
+.home-heading {
+  color: #ffffff;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.home-image {
+  width: 100%;
+  max-width: 800px;
+}
+
+/* responsive */
+@media (min-width: 768px) {
+  .home-heading {
+    font-size: 48px;
+  }
+
+  .home-image {
+    width: 400px;
+  }
+}
